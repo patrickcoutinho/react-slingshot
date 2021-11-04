@@ -11,13 +11,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "NPM install"
-          command: "npm i"
+          name: "Run setup"
+          command: "npm run setup"
       - run:
           name: "Lint code"
           command: "npm run lint"
 
 workflows:
-  say-hello-workflow:
+  ci-workflow:
     jobs:
       - build
