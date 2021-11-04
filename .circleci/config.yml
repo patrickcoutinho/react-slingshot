@@ -2,7 +2,7 @@ version: 2.1
 
 defaults: &defaults
   docker:
-    - image: node:current-alpine3.12
+    - image: nikolaik/python-nodejs
   working_directory: ~/project
 
 jobs:
